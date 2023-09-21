@@ -1,0 +1,430 @@
+body {
+    color: #fff;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(
+        19,
+        19,
+        19,
+        0.9
+    ); /* Ubah nilai alpha (0.5) sesuai dengan seberapa gelap yang Anda inginkan */
+    z-index: -1;
+}
+
+/* Warna latar belakang untuk link navbar yang active */
+.nav-link {
+    margin: 3px;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: #f8b400; /* Warna kuning (sesuaikan dengan tema toko bangunan Anda) */
+    color: #fff;
+    border-radius: 7px;
+}
+
+.carousel-text {
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+    ); /* Warna latar belakang teks deskripsi */
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+}
+
+.darkened-img {
+    position: relative;
+}
+
+.darkened-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(
+        0,
+        0,
+        0,
+        0.5
+    ); /* Ubah nilai alpha (0.5) sesuai dengan seberapa gelap yang Anda inginkan */
+}
+
+.darkened-img img {
+    z-index: -1; /* Mengatur gambar ke belakang overlay */
+}
+
+/* Gaya untuk konten dengan gambar dan teks */
+.content-section {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.content-image {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.content-text {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.icon-background:hover {
+    background-color: #e09200;
+}
+
+/* Gaya untuk harga produk */
+.card-price {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Gaya untuk card produk */
+.card {
+    border: 2px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk footer */
+.footer {
+    background-color: #f8f9fa; /* Warna latar belakang footer */
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #f8b400; /* Warna ikon */
+}
+
+.footer-link {
+    color: #fffdfd;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #f8b400; /* Warna link saat dihover */
+}
+
+/* Gaya untuk tombol Back to Top */
+.btn-back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+
+.btn-back-to-top.show {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Gaya untuk merk logo */
+
+.merk_section::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(
+        19,
+        19,
+        19,
+        0.9
+    ); /* Ubah nilai alpha (0.5) sesuai dengan seberapa gelap yang Anda inginkan */
+    z-index: -1;
+}
+
+.merk-logo {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.merk-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: grayscale(100%); /* Menjadikan gambar menjadi abu-abu */
+    transition: filter 0.6s;
+}
+
+.merk-logo:hover img {
+    filter: none; /* Mengembalikan gambar ke warna aslinya */
+    transition: opacity 0.6s, transform 1s;
+    transform: translateY(-5px);
+}
+
+/* Gaya untuk tombol filter */
+.btn-filter {
+    margin: 10px 5px;
+}
+
+/* Gaya untuk modal detail produk */
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-filter.active {
+    background-color: #f8b400; /* Warna latar belakang yang aktif */
+    color: white; /* Warna teks yang kontras dengan latar belakang */
+}
+
+/* Testimoni Section */
+
+.testimoni-section::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(
+        59,
+        57,
+        57,
+        0.9
+    ); /* Ubah nilai alpha (0.5) sesuai dengan seberapa gelap yang Anda inginkan */
+    z-index: -1;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.testimoni-item {
+    background: rgba(236, 234, 234, 0.9);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 15px;
+}
+
+.testimoni-text {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.author-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: scale-down;
+    margin-right: 20px;
+}
+
+.author-name {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.author-role {
+    font-size: 18px;
+    color: #000;
+}
+
+/*Search Produk */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #303030;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+#search-input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+#search-button {
+    border: none;
+    margin-left: 3px;
+    background-color: #f8b400;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #d8a20f;
+}
+
+/* CSS untuk menyembunyikan dropdown awal */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.profile-icon {
+    position: relative;
+    cursor: pointer;
+}
+.profile-icon:hover .dropdown {
+    display: block;
+}
+.dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.dropdown li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+.dropdown li:last-child {
+    border-bottom: none;
+}
+
+/* pembayaran */
+.payment-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image {
+    max-width: 100px;
+    height: auto;
+}
+
+.product-name {
+    margin: 10px 0;
+}
+
+.product-price {
+    font-weight: bold;
+}
+
+.quantity {
+    margin-top: 20px;
+}
+
+.payment-methods {
+    margin-top: auto;
+}
+
+.right-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.order-summary {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-pay {
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* CSS untuk mengatur tampilan tabel hasil pencarian */
+
+#search-results table {
+    width: 100%;
+    margin: 0;
+}
+
+#search-results th,
+#search-results td {
+    padding: 8px 12px;
+    text-align: left;
+}
+
+#search-results th {
+    background-color: #f2f2f2;
+}
+
+#search-results tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Tampilkan tabel hasil pencarian saat kotak pencarian memiliki fokus */
+#search-input:focus + #search-results {
+    display: flex;
+    z-index: 0;
+}
